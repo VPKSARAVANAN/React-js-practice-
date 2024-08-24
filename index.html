@@ -8,7 +8,7 @@
   <body>
 
     <div id="mydiv"></div>
-  
+  <div id="start"></div>
     
 
     <script type="text/babel">
@@ -16,6 +16,15 @@
         return <h1>Hello React JS! Iam SARAVANAN.</h1>;
       }
 
+      class car extends React Component {
+        render(){
+          return<h2> welcome to reatjs tutorial</h2>;
+        }
+      }
+      const container = document.getElementById('start');
+      const root = ReactDOM.createRoot(container);
+      root.render(<car />);
+      
       const container = document.getElementById('mydiv');
       const root = ReactDOM.createRoot(container);
       root.render(<Hello />);
